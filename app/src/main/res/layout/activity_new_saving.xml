@@ -10,17 +10,55 @@
         android:id="@+id/backButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
         android:text="Back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/foodDrink"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Food & Drink"
-        tools:layout_editor_absoluteX="53dp"
-        tools:layout_editor_absoluteY="172dp" />
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="144dp"
+        android:text="Food and Drink"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/entertainment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="148dp"
+        android:text="Entertainment"
+        app:layout_constraintStart_toEndOf="@+id/foodDrink"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/transportation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="56dp"
+        android:text="Transportation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foodDrink" />
+
+    <Button
+        android:id="@+id/clothes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="52dp"
+        android:text="Clothes"
+        app:layout_constraintStart_toEndOf="@+id/transportation"
+        app:layout_constraintTop_toBottomOf="@+id/entertainment" />
+
 </android.support.constraint.ConstraintLayout>
