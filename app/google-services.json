@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "21985581491",
+    "firebase_url": "https://budgetapp-67aa4.firebaseio.com",
+    "project_id": "budgetapp-67aa4",
+    "storage_bucket": "budgetapp-67aa4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:21985581491:android:2fe563844f9c0e20",
+        "android_client_info": {
+          "package_name": "com.hackathon.budgetapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "21985581491-smsv6g0gpqi65bt2leg2sr54emj3t7er.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAp7O2qSsb3lVH5avE0CPiFLLtDFgAPZD0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "21985581491-smsv6g0gpqi65bt2leg2sr54emj3t7er.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
