@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="52dp"
         android:layout_marginEnd="8dp"
         android:text="End of Trip Savings:"
         android:textSize="30sp"
@@ -24,15 +24,14 @@
         android:id="@+id/moneySaved"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginLeft="112dp"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="8dp"
         android:textSize="36sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.303"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/announcement" />
+        app:layout_constraintTop_toBottomOf="@+id/announcement"
+        tools:text="$3" />
 
     <TextView
         android:id="@+id/congratulation"
@@ -50,36 +49,55 @@
 
     <Button
         android:id="@+id/donateCharity"
-        android:layout_width="wrap_content"
+        android:layout_width="180dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
+        android:background="#09259C"
         android:text="Donate 5% to charity"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/addSavings"
+        app:layout_constraintHorizontal_bias="0.296"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/congratulation" />
+        app:layout_constraintTop_toBottomOf="@+id/congratulation"
+        app:layout_constraintVertical_bias="0.171" />
 
     <Button
         android:id="@+id/addSavings"
-        android:layout_width="wrap_content"
+        android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
         android:layout_marginBottom="8dp"
+        android:background="#09259C"
         android:text="Add to savings"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/congratulation" />
+        app:layout_constraintTop_toBottomOf="@+id/congratulation"
+        app:layout_constraintVertical_bias="0.171" />
 
     <TextView
         android:id="@+id/category"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginLeft="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
         android:textSize="28sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/moneySaved"
-        app:layout_constraintTop_toBottomOf="@+id/announcement" />
+        app:layout_constraintTop_toBottomOf="@+id/announcement"
+        tools:text="on food" />
 
 </android.support.constraint.ConstraintLayout>

@@ -15,6 +15,18 @@ public class NewSavingActivity extends AppCompatActivity {
 
         configureBackButton();
         configureSavingCategories();
+        configureCameraButton();
+    }
+
+    private void configureCameraButton() {
+        Button cameraButton = (Button) findViewById(R.id.cameraButton);
+        cameraButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(NewSavingActivity.this, CameraActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void configureBackButton() {
