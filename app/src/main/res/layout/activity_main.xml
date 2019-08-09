@@ -9,6 +9,12 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
     <TextView
         android:id="@+id/title1"
         android:layout_width="wrap_content"
@@ -21,6 +27,12 @@
         android:id="@+id/chart"
         android:layout_width="300dp"
         android:layout_height="250dp" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
 
     <TextView
         android:id="@+id/title2"
@@ -35,6 +47,12 @@
         android:layout_width="300dp"
         android:layout_height="250dp" />
 
+
+    <View
+        android:id="@+id/divider5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
 
     <Button
         android:id="@+id/newSavingButton"
