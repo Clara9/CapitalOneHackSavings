@@ -17,7 +17,13 @@ import com.github.mikephil.charting.data.PieData;
 import com.github.mikephil.charting.data.PieDataSet;
 import com.github.mikephil.charting.utils.ColorTemplate;
 
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,7 +34,6 @@ public class MainActivity extends AppCompatActivity {
 
         configureNewSavingButton();
 
-
         PieChart pieChart = (PieChart) findViewById(R.id.chart2);
 
         PieChart pieChart2 = (PieChart) findViewById(R.id.chart);
@@ -37,17 +42,17 @@ public class MainActivity extends AppCompatActivity {
         ArrayList<Entry> yvalues = new ArrayList<Entry>();
         ArrayList<String> xVals = new ArrayList<String>();
 
-        yvalues.add(new Entry(8, 0));
-        yvalues.add(new Entry(15, 1));
-        yvalues.add(new Entry(12, 2));
-        yvalues.add(new Entry(25, 3));
-        yvalues.add(new Entry(23, 4));
+        yvalues.add(new Entry(50f, 0));
+        yvalues.add(new Entry(35f, 1));
+        yvalues.add(new Entry(89f, 2));
+        yvalues.add(new Entry(93f, 3));
+        yvalues.add(new Entry(135f, 4));
 
-        xVals.add("January");
-        xVals.add("February");
-        xVals.add("March");
-        xVals.add("April");
-        xVals.add("May");
+        xVals.add("Food");
+        xVals.add("Transportation");
+        xVals.add("Entertainment");
+        xVals.add("Fashion");
+        xVals.add("Other");
 
         PieDataSet dataSet = new PieDataSet(yvalues, "");
 
@@ -59,12 +64,12 @@ public class MainActivity extends AppCompatActivity {
         pieChart2.invalidate();
 
         pieChart.setDrawHoleEnabled(true);
-        pieChart.setTransparentCircleRadius(30f);
-        pieChart.setHoleRadius(30f);
+        pieChart.setTransparentCircleRadius(50f);
+        pieChart.setHoleRadius(50f);
 
         pieChart2.setDrawHoleEnabled(true);
-        pieChart2.setTransparentCircleRadius(30f);
-        pieChart2.setHoleRadius(30f);
+        pieChart2.setTransparentCircleRadius(50f);
+        pieChart2.setHoleRadius(50f);
 
         dataSet.setColors(ColorTemplate.VORDIPLOM_COLORS);
         data.setValueTextSize(13f);
