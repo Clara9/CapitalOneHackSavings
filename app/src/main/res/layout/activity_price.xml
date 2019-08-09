@@ -26,6 +26,8 @@
         android:ems="10"
         android:hint="Input a price"
         android:inputType="numberDecimal"
+        android:textColorHighlight="#7986CB"
+        android:textColorLink="#4FC3F7"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
